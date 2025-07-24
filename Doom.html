@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOOM</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom,
+          rgba(255, 0, 0, 0) 300px,
+          rgba(104, 12, 4, 1) 1000px),
+        url("DoomHELL2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: white;
+      font-family: 'Michroma', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .preto {
+      color: black;
+    }
+
+    .vermelho {
+      color: red;
+    }
+
+    details summary {
+      list-style: none;
+      cursor: pointer;
+      position: relative;
+      padding-left: 18px;
+      font-family: 'Michroma', sans-serif;
+      color: #ff0000;
+      line-height: 1.2;
+    }
+
+    details summary::before {
+      content: "☠";
+      position: absolute;
+      left: 130px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: crimson;
+      font-size: 18px;
+      font-family: 'Michroma', sans-serif;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::before {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .com-borda {
+      border: 2px solid #ff0000;
+      padding: 10px;
+      background-color: rgba(255, 0, 0, 0.1);
+      box-shadow: 0 0 10px red;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    hr {
+  border: none;
+  height: 2px;
+  background-color: #ff0000;
+}
+
+.voltar {
+        color: red;
+    }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(20, 0, 0, 0.8);  
+  border-bottom: 2px solid rgba(104, 12, 4, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 40px;
+  transition: top 0.3s ease-in-out;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: crimson;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lenda-container {
+  border: 3px solid red;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px crimson;
+  border-radius: 15px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+    <h1 class="logo">
+      <img src="78-781211_doom-logo-doom-eternal-logo-png.png" alt="DOOM logo" width="150">
+    </h1>
+    <nav class="menu">
+        <ul>
+         <li><a href="DoomTest.html">Início</a></li>
+          <li><a href="#maligog">Maligog</a></li>
+          <li><a href="#davoth">Davoth</a></li>
+         <li><a href="DoomPage3.html">Demônios</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <img src="Doom.png" alt="Doom" width="400" id="início" style="margin-top:150px">
+
+  <div class="lenda-container">
+  <h2 style="color: red;">O Início da Lenda</h2>
+  <p>
+    Muito antes de ser temido como o Doom Slayer, ele era apenas um guerreiro humano consumido pela dor e pela raiva, um homem devastado pela perda e movido por um desejo incontrolável de vingança contra os demônios que haviam destruído tudo o que ele amava. Capturado pelos Sentinelas de Argent D’Nur — uma civilização guerreira de outro mundo — ele foi lançado nas arenas de combate, onde deveria encontrar a morte como tantos outros antes dele. Mas o que os Sentinelas testemunharam foi diferente: uma fúria pura, inabalável e incessante. Nenhum oponente resistia por muito tempo; sua sede de sangue demoníaco o tornava imparável, quase bestial, mas com um propósito claro. O ponto decisivo de sua ascensão aconteceu quando enfrentou e destruiu o colossal Maligog, o Tirano — uma abominação gigantesca que devastava cidades inteiras e que nem mesmo os maiores guerreiros dos Sentinelas haviam ousado enfrentar. Ao tombar a criatura com suas próprias mãos, aquele homem ganhou mais do que respeito: ele foi consagrado com um novo nome — Doom Slayer, o Ceifador da Perdição. A partir daquele momento, não era mais apenas um homem. Era uma força viva, uma entidade forjada pela dor, armada com ódio e movida por uma fúria que nem mesmo o inferno conseguiria conter. Os próprios demônios, antes arrogantes e implacáveis, começaram a recuar diante de sua presença. Seu nome passou a ecoar como um presságio de destruição, um lembrete de que nenhum ser do inferno estaria seguro. O universo conheceu sua lenda, e o inferno, pela primeira vez... tremeu.
+  </p>
+</div>
+
+
+  <img src="Maligog.png" alt="Maligog" width="300" id="maligog">
+
+  <details>
+    <summary><b><span class="vermelho">MALIGOG</span></b></summary>
+    <p class="com-borda">Maligog é gigantesco, mesmo para um titã, superando todos os Demônios. Sua função é proteger as
+      Esferas da Vida do Pai e do Lorde das Trevas. Ele erguerá uma plataforma para aqueles que passarem pelos três
+      testes, permitindo-lhes acesso às Esferas da Vida.</p>
+  </details>
+
+  <hr>
+
+  <h3 class="com-borda">O auge de DOOM Slayer</h3>
+
+  <p class="com-borda">
+    <b><i>DOOM Slayer</i></b> alcança seu auge ao enfrentar e derrotar <b><i>Davoth</i></b>, o Dark
+    Lord, entidade suprema que criou os <i>Maykrs</i> e o próprio inferno. Em <b>DOOM Eternal: The Ancient Gods – Parte
+      2</b>, ele invade Jekkad, o reino do Dark Lord, e trava uma batalha épica contra essa força primordial,
+    considerada o "Deus" original da realidade. Mesmo sendo apenas um mortal, o Slayer supera Davoth com pura fúria,
+    habilidade e poder, encerrando a guerra cósmica entre Céu, Inferno e Terra — e provando que nenhum deus está acima
+    de sua vingança.
+  </p>
+
+  <figure>
+  <img src="davoth2.png" alt="davoth unarmored" width="300" id="davoth"><figcaption><a href="DoomPage2.html"><p class="voltar">Saiba mais</p></a></figcaption>
+  </figure>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const header = document.querySelector(".site-header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      header.style.top = "-100px"; // Esconde
+    } else {
+      header.style.top = "0"; // Mostra
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+</body>
+</html>
